@@ -1,4 +1,8 @@
-<h1 align="left">Hi, I'm <strong>Sridhar Mahalingam</strong></h1>
+<img align="center" alt="Banner" src="https://user-images.githubusercontent.com/22107794/139580686-887df369-edb8-4bc8-b607-4fbf6d7e4866.gif"/>
+
+<h1 align="left">
+  Hi, I'm <strong>Sridhar Mahalingam</strong>
+</h1>
 
 <h3>Full Stack Developer | React • Next.js • Django • Python</h3>
 
@@ -6,24 +10,23 @@
   <img align="right" width="350" src="https://user-images.githubusercontent.com/74038190/221352989-518609ab-b4d1-459e-929f-a08cd2bd9b3c.gif" />
 
   <p>
-    Full Stack Developer with 1+ year of experience building and deploying live production web applications for UK and Qatar clients.
-    Experienced in developing scalable full-stack systems, secure payment integrations, cloud storage, and Linux-based server deployments.
+    Full Stack Developer with 1+ year of experience building live production web applications for UK and Qatar clients.
+    I specialize in creating scalable full-stack systems, modern responsive UIs, secure payment integrations, and deploying applications on Linux-based servers and cloud platforms.
   </p>
 
   <p>
-    📍 Doha, Qatar <br>
-    📧 sridharansridhar22@gmail.com <br>
-    🌐 <a href="https://sridharportfolio1.netlify.app/">Portfolio</a> <br>
-    💼 Open to Full-Time | Freelance | Relocation within Qatar
+    <img src="https://img.shields.io/badge/📍_Doha,_Qatar-1e1e2e?style=for-the-badge" />
+    <a href="mailto:sridharansridhar22@gmail.com">
+      <img src="https://img.shields.io/badge/📧_sridharansridhar22@gmail.com-1e1e2e?style=for-the-badge" />
+    </a>
+    <a href="https://sridharportfolio1.netlify.app/">
+      <img src="https://img.shields.io/badge/🌐_Portfolio-1e1e2e?style=for-the-badge" />
+    </a>
+    <img src="https://img.shields.io/badge/💼_Open_to_Work_(Qatar)-1e1e2e?style=for-the-badge" />
   </p>
-</div>
 
-<br clear="all" />
-
----
-
-## 🌐 Connect with Me
-
+<h3>🌐 Connect with Me</h3>
+  
 <p align="left">
   <a href="https://github.com/Sridhar08-glitch">
     <img src="https://img.shields.io/badge/GitHub-1A1A1A?style=for-the-badge&logoColor=white" />
@@ -34,84 +37,90 @@
   </a>
 </p>
 
+  <img src="https://komarev.com/ghpvc/?username=Sridhar08-glitch&style=flat-square&color=blue" alt="Profile Visit"/>
+</div>
+
+<br clear="all" />
+
 ---
 
-## 🛠️ Technical Skills
+## 🛠️ Skills
+<p align="center">
+<table>
+<tr>
+<td width="50%" align="center">
+<h3>💻 Programming Languages</h3>
 
-**Languages:**  
-HTML • CSS • JavaScript • Python • TypeScript (Basic)
+<img src="https://skillicons.dev/icons?i=html,css,js,python,typescript" />
+<br/><br/>
 
-**Frameworks:**  
-React.js • Next.js • Django • React Native • Angular (Basic)
+</td>
 
-**Databases:**  
-MySQL • PostgreSQL (Basic)
+<td width="50%" align="center">
+<h3>📚 Frameworks & Libraries</h3>
 
-**Cloud & DevOps:**  
-AWS S3 • Linux Server • VPS Deployment (Contabo) • Docker (Basic) • Git
+<img src="https://skillicons.dev/icons?i=react,nextjs,django,angular,tailwind,bootstrap" />
+</td>
+</tr>
 
-**Integrations:**  
-Stripe Payment Gateway • REST APIs • JWT Authentication
+<tr>
+<td width="50%" align="center">
+<h3>🗄️ Databases</h3>
+
+<img src="https://skillicons.dev/icons?i=mysql,postgresql" />
+<br/><br/>
+
+</td>
+
+<td width="50%" align="center">
+<h3>🧰 Tools & Platforms</h3>
+
+<img src="https://skillicons.dev/icons?i=git,docker,aws,vscode,postman,linux" />
+</td>
+</tr>
+</table>
+</p>
 
 ---
 
 ## 🚀 Live Production Projects
 
-### 1. Plugged In Scents – UK E-Commerce Platform
-🔗 https://www.pluggedinscents.co.uk  
-**Tech:** React, Django REST, MySQL, Stripe, AWS S3, Linux VPS  
-
-- Developed full-stack e-commerce platform with separate Admin & Customer panels  
-- Built React-based admin dashboard for product, order, and user management  
-- Integrated **Stripe** for secure online payments  
-- Configured **AWS S3** for scalable product image storage  
-- Implemented JWT authentication and secure REST APIs  
-- Deployed and managed on **Linux VPS (Contabo)**  
-- Worked directly with UK client
+**Plugged In Scents (UK)**  
+https://www.pluggedinscents.co.uk  
+React • Django • MySQL • Stripe • AWS S3 • Linux VPS  
+- Full-stack e-commerce platform with Admin Dashboard  
+- Stripe payment integration  
+- AWS S3 image storage  
+- Deployed on Contabo VPS
 
 ---
 
-### 2. Seven Stars – Qatar E-Commerce Platform
-🔗 http://www.sevenstars.qa  
-**Tech:** Next.js, Django, MySQL, Linux VPS  
-
-- Built complete online store for Doha-based business  
-- Implemented cart, checkout, invoice generation, and email notifications  
-- Developed REST APIs for product and order workflows  
-- Optimized performance and SEO (sitemap, indexing)  
-- Deployed on **Contabo VPS**
+**Seven Stars (Qatar)**  
+http://www.sevenstars.qa  
+Next.js • Django • MySQL • Linux VPS  
+- Complete online store with cart, checkout, invoices, and email notifications  
+- SEO optimized and deployed on VPS
 
 ---
 
-### 3. NH LiveSpace – Construction Business Platform
-🔗 https://www.nhlivespace.com  
-**Tech:** React, Django, Linux  
-
-- Developed business website with project portfolio and service showcase  
-- Implemented secure client inquiry system  
-- Built responsive and SEO-optimized UI  
-- Deployed on Linux production server
+**NH LiveSpace**  
+https://www.nhlivespace.com  
+React • Django • Linux Deployment  
+- Construction & interior business platform with portfolio and inquiry system
 
 ---
 
-### 4. Techynova – Software Services Platform
-🔗 https://www.techynova.tech  
-**Tech:** React, Django, Linux  
-
-- Developed company website for web and application services  
-- Implemented secure lead and inquiry management  
-- Designed responsive UI and SEO-friendly structure  
-- Managed deployment and production configuration
+**Techynova**  
+https://www.techynova.tech  
+React • Django • Linux  
+- Business website for web development services with secure client inquiry system
 
 ---
 
-### 5. Indiguard Security – UK Business Platform
-🔗 http://www.indiguardsecurity.co.uk  
-**Tech:** React, Django, Tailwind  
-
-- Built service-based platform with dynamic modules  
-- Implemented secure contact system and admin management  
-- Deployed frontend on **Vercel** and backend on **Render**
+**Indiguard Security (UK)**  
+http://www.indiguardsecurity.co.uk  
+React • Django • Vercel • Render  
+- Service-based business platform with admin management and secure contact workflow
 
 ---
 
@@ -127,7 +136,7 @@ Stripe Payment Gateway • REST APIs • JWT Authentication
 
 ## 🎯 Current Status
 
-- Actively seeking **Full Stack Developer opportunities in Qatar**
-- Experience working with **live production systems**
+- Actively seeking **Full Stack Developer roles in Qatar**
 - Available for **Full-Time / Freelance**
-- Open to relocation within Qatar
+- Experience working with **UK & Qatar clients**
+- Skilled in **Stripe • AWS • VPS • Linux Deployment**
