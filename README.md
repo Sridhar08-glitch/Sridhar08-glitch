@@ -140,3 +140,45 @@ React • Django • Vercel • Render
 - Available for **Full-Time / Freelance**
 - Experience working with **UK & Qatar clients**
 - Skilled in **Stripe • AWS • VPS • Linux Deployment**
+
+---
+
+## 💼 Hire Me
+
+<p align="center">
+  <a href="mailto:sridharansridhar22@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Hire%20Me-blue?style=for-the-badge&logo=gmail" />
+  </a>
+  
+  <a href="https://www.linkedin.com/in/sridhar-mahalingam-6b8357245/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+  
+  <a href="https://sridharportfolio1.netlify.app/">
+    <img src="https://img.shields.io/badge/Portfolio-View%20Projects-blue?style=for-the-badge&logo=google-chrome" />
+  </a>
+</p>
+
+
+---
+
+## 🚀 Open to Opportunities
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Open%20to-Full%20Stack%20Developer%20Roles%20(Qatar)-success?style=for-the-badge" />
+  <br/>
+  <img src="https://img.shields.io/badge/Available-Full--Time%20%7C%20Freelance%20%7C%20Contract-orange?style=for-the-badge" />
+</p>
+
+
+---
+
+## ❤️ Support & Collaboration
+
+<p align="center">
+  Open for collaboration, freelance projects, and full-time opportunities.
+  <br/><br/>
+  <a href="mailto:sridharansridhar22@gmail.com">
+    <img src="https://img.shields.io/badge/Contact%20Me-Let's%20Work%20Together-red?style=for-the-badge" />
+  </a>
+</p>
