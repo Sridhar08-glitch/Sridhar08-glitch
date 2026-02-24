@@ -1,8 +1,4 @@
-<img align="center" alt="Banner" src="https://user-images.githubusercontent.com/22107794/139580686-887df369-edb8-4bc8-b607-4fbf6d7e4866.gif"/>
-
-<h1 align="left">
-  Hi, I'm <strong>Sridhar Mahalingam</strong>
-</h1>
+<h1 align="left">Hi, I'm <strong>Sridhar Mahalingam</strong></h1>
 
 <h3>Full Stack Developer | React • Next.js • Django • Python</h3>
 
@@ -10,17 +6,16 @@
   <img align="right" width="350" src="https://user-images.githubusercontent.com/74038190/221352989-518609ab-b4d1-459e-929f-a08cd2bd9b3c.gif" />
 
   <p>
-    Full Stack Developer with 1 year of experience building modern web applications using React, Next.js, and Django.  
-    I specialize in creating scalable APIs, responsive user interfaces, and full-stack solutions for real-world business needs.
+    Full Stack Developer with 1+ year of experience building and deploying live production web applications for UK and Qatar clients.
+    Experienced in developing scalable full-stack systems, secure payment integrations, cloud storage, and Linux-based server deployments.
   </p>
 
   <p>
     📍 Doha, Qatar <br>
     📧 sridharansridhar22@gmail.com <br>
     🌐 <a href="https://sridharportfolio1.netlify.app/">Portfolio</a> <br>
-    🤝 Open to Full-Time | Freelance | Relocation (Qatar)
+    💼 Open to Full-Time | Freelance | Relocation within Qatar
   </p>
-
 </div>
 
 <br clear="all" />
@@ -41,36 +36,82 @@
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Technical Skills
 
-### 💻 Programming Languages
-<img src="https://skillicons.dev/icons?i=html,css,js,typescript,python" />
+**Languages:**  
+HTML • CSS • JavaScript • Python • TypeScript (Basic)
 
-### ⚙️ Frameworks & Libraries
-<img src="https://skillicons.dev/icons?i=react,nextjs,nodejs,django,bootstrap,tailwind,angular" />
+**Frameworks:**  
+React.js • Next.js • Django • React Native • Angular (Basic)
 
-### 🗄️ Databases
-<img src="https://skillicons.dev/icons?i=mysql,postgresql" />
+**Databases:**  
+MySQL • PostgreSQL (Basic)
 
-### 🧰 Tools & Platforms
-<img src="https://skillicons.dev/icons?i=git,docker,aws,vscode,postman" />
+**Cloud & DevOps:**  
+AWS S3 • Linux Server • VPS Deployment (Contabo) • Docker (Basic) • Git
+
+**Integrations:**  
+Stripe Payment Gateway • REST APIs • JWT Authentication
 
 ---
 
-## 🚀 Projects
+## 🚀 Live Production Projects
 
-- **E-Commerce Platform**  
-  Next.js frontend with Django REST backend, user authentication, cart, orders, and payment workflow.
+### 1. Plugged In Scents – UK E-Commerce Platform
+🔗 https://www.pluggedinscents.co.uk  
+**Tech:** React, Django REST, MySQL, Stripe, AWS S3, Linux VPS  
 
-- **People Safety System**  
-  Django-based crime reporting platform with location tracking, admin alerts, and notification system.
+- Developed full-stack e-commerce platform with separate Admin & Customer panels  
+- Built React-based admin dashboard for product, order, and user management  
+- Integrated **Stripe** for secure online payments  
+- Configured **AWS S3** for scalable product image storage  
+- Implemented JWT authentication and secure REST APIs  
+- Deployed and managed on **Linux VPS (Contabo)**  
+- Worked directly with UK client
 
-- **Real-time Chat Application**  
-  Django Channels + WebSockets for live messaging and real-time notifications.
+---
 
-- **Portfolio Website**  
-  Personal developer portfolio showcasing projects and skills.  
-  🔗 https://sridharportfolio1.netlify.app/
+### 2. Seven Stars – Qatar E-Commerce Platform
+🔗 http://www.sevenstars.qa  
+**Tech:** Next.js, Django, MySQL, Linux VPS  
+
+- Built complete online store for Doha-based business  
+- Implemented cart, checkout, invoice generation, and email notifications  
+- Developed REST APIs for product and order workflows  
+- Optimized performance and SEO (sitemap, indexing)  
+- Deployed on **Contabo VPS**
+
+---
+
+### 3. NH LiveSpace – Construction Business Platform
+🔗 https://www.nhlivespace.com  
+**Tech:** React, Django, Linux  
+
+- Developed business website with project portfolio and service showcase  
+- Implemented secure client inquiry system  
+- Built responsive and SEO-optimized UI  
+- Deployed on Linux production server
+
+---
+
+### 4. Techynova – Software Services Platform
+🔗 https://www.techynova.tech  
+**Tech:** React, Django, Linux  
+
+- Developed company website for web and application services  
+- Implemented secure lead and inquiry management  
+- Designed responsive UI and SEO-friendly structure  
+- Managed deployment and production configuration
+
+---
+
+### 5. Indiguard Security – UK Business Platform
+🔗 http://www.indiguardsecurity.co.uk  
+**Tech:** React, Django, Tailwind  
+
+- Built service-based platform with dynamic modules  
+- Implemented secure contact system and admin management  
+- Deployed frontend on **Vercel** and backend on **Render**
 
 ---
 
@@ -86,12 +127,7 @@
 
 ## 🎯 Current Status
 
-- 🔍 Actively looking for **Full Stack Developer roles in Qatar**
-- 💼 Available for **Full-Time / Freelance**
-- 🌍 Open to relocation within Qatar
-
----
-
-## ❤️ Support
-
-If you like my work, feel free to connect or collaborate!
+- Actively seeking **Full Stack Developer opportunities in Qatar**
+- Experience working with **live production systems**
+- Available for **Full-Time / Freelance**
+- Open to relocation within Qatar
