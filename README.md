@@ -4,7 +4,7 @@
 
 # Hi, I'm Sridhar Mahalingam 👋
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=C9A057&center=true&vCenter=true&width=640&lines=Full+Stack+Developer+%E2%80%94+Doha%2C+Qatar;I+build+software+around+constraints.;Django+%E2%80%A2+Next.js+%E2%80%A2+Flutter+%E2%80%A2+Kotlin+%E2%80%A2+Rust;Self-hosted+AI+%E2%80%94+no+cloud+APIs%2C+ever.;19+systems+%C2%B7+7+problem+domains+%C2%B7+5+live+clients" alt="Typing intro" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=C9A057&center=true&vCenter=true&width=640&lines=Full+Stack+Developer+%E2%80%94+Doha%2C+Qatar;I+build+software+around+constraints.;Django+%E2%80%A2+Next.js+%E2%80%A2+Flutter+%E2%80%A2+Kotlin+%E2%80%A2+Rust;Self-hosted+AI+%E2%80%94+no+cloud+APIs%2C+ever.;20+systems+%C2%B7+7+problem+domains+%C2%B7+5+live+clients" alt="Typing intro" />
 
 **I build software around constraints** — security, offline-first, real-time, multi-tenancy and self-hosted AI.
 
@@ -40,7 +40,7 @@ SCOPE   security · ERPs · e-commerce · healthcare · mobile · self-hosted AI
 ORIGIN  studied petrochemical engineering → fell in love with code
 ```
 
-Full Stack Developer with 3+ years of experience building scalable web and mobile applications for **UK and Qatar clients** — modern responsive UIs, secure REST APIs, payment integrations, real-time systems, and Linux/cloud deployment. I've shipped **19 systems across 7 problem domains**, most of them alone, from the first database schema to the Nginx config on the server.
+Full Stack Developer with 3+ years of experience building scalable web and mobile applications for **UK and Qatar clients** — modern responsive UIs, secure REST APIs, payment integrations, real-time systems, and Linux/cloud deployment. I've shipped **20 systems across 7 problem domains**, most of them alone, from the first database schema to the Nginx config on the server.
 
 If a system depends on someone else's cloud, my first question is always — *does it have to?*
 
@@ -77,7 +77,7 @@ If a system depends on someone else's cloud, my first question is always — *do
 <td width="50%" align="center">
 <h3>🤖 AI / ML</h3>
 <img src="https://skillicons.dev/icons?i=pytorch,tensorflow" />
-<br/><sub>FCOS • ONNX Runtime • Faster-Whisper • Ollama • Tesseract OCR • RAG + pgvector — all self-hosted</sub>
+<br/><sub>LangGraph multi-agent • FCOS • ONNX Runtime • Faster-Whisper • Ollama • Tesseract OCR • RAG + pgvector — all self-hosted</sub>
 </td>
 <td width="50%" align="center">
 <h3>🗄️ Databases</h3>
@@ -105,7 +105,7 @@ If a system depends on someone else's cloud, my first question is always — *do
 
 ## 🚀 Flagship Systems
 
-Six systems, six different problems — each organised around a genuinely different constraint.
+Seven systems, seven different problems — each organised around a genuinely different constraint.
 <sub>Every card expands — click <b>📖 More about this system</b> for the problem, the key decision and the trade-off.</sub>
 
 <table>
@@ -134,6 +134,31 @@ A self-hosted, privacy-first ecosystem that blocks ads, trackers and malware at 
 </td>
 <td width="50%" valign="top">
 
+### 🔬 AI Research Agent
+
+<img src="https://img.shields.io/badge/COMPLETED-4D8A81?style=flat-square" />
+<br/><sub><b>Agentic AI · Multi-Agent Systems · RAG</b> · Independent project — sole architect and developer</sub>
+
+A local-first, multi-agent research workstation — LangGraph-orchestrated agents plan the research, search the real web, ground every finding in retrieved evidence, criticise their own analysis and write cited reports on a fully local LLM, with every citation verified against the session's own sources before publishing.
+
+<code>Python 3.12</code> <code>LangGraph</code> <code>FastAPI</code> <code>Pydantic v2</code> <code>Ollama (local LLM)</code> <code>PostgreSQL + pgvector</code> <sub>+6</sub>
+
+🔗 <a href="https://github.com/Sridhar08-glitch/AI-Research-Agent"><b>Repo</b></a>
+
+<details><summary><b>📖 More about this system</b></summary>
+<br/>
+<img src="./assets/ai-research-agent.png" alt="AI Research Agent screenshot" width="100%" />
+<p><b>👥 Who it's for —</b> Anyone who needs research they can actually trust — analysts, students, teams evaluating tools or markets — and engineers who want a working reference for agentic RAG done honestly.</p>
+<p><b>🎯 The problem —</b> LLM 'research' tools routinely hallucinate — they cite sources that were never read and state claims no evidence supports. Sridhar wanted an agent system where hallucination is prevented by construction, not by prompt-engineering hope: every claim must trace to evidence the system actually retrieved, or it does not get published.</p>
+<p><b>🧠 Key decision · A Critic agent that can send the whole workflow back —</b> Most agent pipelines are a one-way conveyor belt: plan, search, write, ship — whatever the model produced goes out. Here the Critic is a real gate in the state machine: it checks the analysis against the retrieved evidence and, when evidence is insufficient, loops the workflow back to research with refined queries — bounded at two iterations so it can never loop forever. The report cannot be written until the Critic approves or iterations exhaust, and even then every [n] citation is verified against the session's own collected sources — semantically, in vector space — before publishing.</p>
+<p><b>⚖️ Trade-off —</b> The verification loop costs real latency: a standard run takes ~2.5 minutes on a local 3B model, largely because the strict Critic rejects the first pass and forces a second research round. That cost is deliberate — a quick mode trades the critic loop for ~2× lower latency while keeping URL grounding and citation verification fully active, and the measured result is that quick mode actually gains citation coverage by publishing fewer, better-grounded claims.</p>
+<p><b>✨ Highlights</b></p><ul><li>Hallucination reduction is structural, not hopeful — six independent guards between the model and the published report.</li><li>Runs entirely locally except web search: local LLM, local embeddings, local database, no API keys required for grounded output.</li><li>Human-in-the-loop review gate that auto-approves on timeout, so autonomous runs never hang.</li></ul>
+</details>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🧠 MeetingMind AI
 
 <img src="https://img.shields.io/badge/COMPLETED-4D8A81?style=flat-square" />
@@ -155,8 +180,6 @@ A meeting-intelligence platform that turns raw audio and video into transcripts,
 <p><b>✨ Highlights</b></p><ul><li>Runs end to end with zero paid APIs — local by default, cloud by configuration.</li><li>RAG answers are citation-bound and refuse to hallucinate beyond source material.</li><li>Reproducible diarisation benchmark harness with provenance-stamped runs.</li></ul>
 </details>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🛒 CommerceOS
@@ -179,6 +202,8 @@ A multi-tenant, headless commerce platform whose backend is deliberately vertica
 <p><b>✨ Highlights</b></p><ul><li>A new vertical is a configuration change, not a code fork.</li><li>Per-tenant adapter resolution keeps the core dependent only on interfaces.</li><li>Governance via a constitution, ADRs and per-phase validation reports.</li></ul>
 </details>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🏢 No-Code Enterprise ERP
@@ -201,8 +226,6 @@ A metadata-driven enterprise operating system where organisations define their o
 <p><b>✨ Highlights</b></p><ul><li>New business modules created through configuration, without a code deployment.</li><li>Row-Level Security removes an entire class of cross-tenant data-leak risk.</li><li>Double-entry ledger keeps balanced books across all transactional activity.</li></ul>
 </details>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ Construction ERP
@@ -225,6 +248,8 @@ An enterprise resource planning system for construction, delivered as a native W
 <p><b>✨ Highlights</b></p><ul><li>No hosted server — no hosting cost, no single point of failure.</li><li>Rust/Tauri binary with a substantially smaller footprint than Electron.</li><li>Same REST surface serves both offline and synced multi-user modes.</li></ul>
 </details>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 📄 Airsume
@@ -247,6 +272,7 @@ A resume-analysis and ATS platform that turns unstructured resumes and job descr
 <p><b>✨ Highlights</b></p><ul><li>Every field ships with value, confidence, method and source-span — it never fabricates.</li><li>Scores come with the human-readable reasons behind them.</li><li>Honest evaluation built in via a golden-dataset benchmark harness.</li></ul>
 </details>
 </td>
+<td width="50%"></td>
 </tr>
 </table>
 
