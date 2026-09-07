@@ -105,7 +105,7 @@ If a system depends on someone else's cloud, my first question is always — *do
 
 ## 🚀 Flagship Systems
 
-Seven systems, seven different problems — each organised around a genuinely different constraint.
+Eight systems, eight different problems — each organised around a genuinely different constraint.
 <sub>Every card expands — click <b>📖 More about this system</b> for the problem, the key decision and the trade-off.</sub>
 
 <table>
@@ -134,6 +134,31 @@ A self-hosted, privacy-first ecosystem that blocks ads, trackers and malware at 
 </td>
 <td width="50%" valign="top">
 
+### 🧾 S POS
+
+<img src="https://img.shields.io/badge/COMPLETED-4D8A81?style=flat-square" />
+<br/><sub><b>Retail POS · Multi-Platform · Offline-First</b> · Independent product — sole architect and developer</sub>
+
+A complete, multi-currency retail point-of-sale and back-office platform — one Django engine, three ways to run a store: a hosted SaaS website, a self-contained Windows desktop exe that serves the whole shop over Wi-Fi, and a mobile app that can run the entire store on a phone, fully offline.
+
+<code>Python</code> <code>Django 5.2</code> <code>Django REST Framework</code> <code>Celery</code> <code>Redis</code> <code>PostgreSQL</code> <sub>+6</sub>
+
+🔗 <a href="https://github.com/Sridhar08-glitch/S-pos"><b>Repo</b></a>
+
+<details><summary><b>📖 More about this system</b></summary>
+<br/>
+<img src="./assets/spos.png" alt="S POS screenshot" width="100%" />
+<p><b>👥 Who it's for —</b> Retail shops of any size — from a market stall running everything on one phone to a multi-store, multi-company operation with registers, purchasing and accounting.</p>
+<p><b>🎯 The problem —</b> Point-of-sale software assumes a shape: either a cloud SaaS that dies with the internet connection, or a legacy desktop till that can't do e-commerce-grade back-office. A small shop shouldn't have to choose between 'works offline' and 'real inventory, accounting and multi-store' — and it shouldn't need an IT department to install either.</p>
+<p><b>🧠 Key decision · The server never trusts the till —</b> Every client computes its cart totals locally for instant UI — but at checkout the server recomputes the whole invoice with identical per-line rounding, tax and discount rules, and refuses the sale on any mismatch. Sale creation, row-locked stock decrement and double-entry ledger posting happen in one database transaction, keyed by an idempotency key, so the same key can never produce a duplicate charge and a crashed request can never half-record a sale.</p>
+<p><b>⚖️ Trade-off —</b> Recomputing totals server-side means the pricing rules exist twice — once in each client for responsiveness, once authoritatively on the server — and every rule change must keep them in agreement, with a retry protocol for the mismatch case. That duplication is accepted because the alternative is trusting whatever number a client sends about money.</p>
+<p><b>✨ Highlights</b></p><ul><li>One /api/v1 contract, three deployment shapes — hosted SaaS, single-exe LAN server, and a phone that can be the entire store offline.</li><li>Money paths are server-authoritative: totals recomputed with identical rules, stock row-locked and double-entry ledger posted in one transaction.</li><li>A shop can run forever with zero internet — SQLite inside the exe, a complete store engine on the phone.</li></ul>
+</details>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
 ### 🔬 AI Research Agent
 
 <img src="https://img.shields.io/badge/COMPLETED-4D8A81?style=flat-square" />
@@ -155,8 +180,6 @@ A local-first, multi-agent research workstation — LangGraph-orchestrated agent
 <p><b>✨ Highlights</b></p><ul><li>Hallucination reduction is structural, not hopeful — six independent guards between the model and the published report.</li><li>Runs entirely locally except web search: local LLM, local embeddings, local database, no API keys required for grounded output.</li><li>Human-in-the-loop review gate that auto-approves on timeout, so autonomous runs never hang.</li></ul>
 </details>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🧠 MeetingMind AI
@@ -180,6 +203,8 @@ A meeting-intelligence platform that turns raw audio and video into transcripts,
 <p><b>✨ Highlights</b></p><ul><li>Runs end to end with zero paid APIs — local by default, cloud by configuration.</li><li>RAG answers are citation-bound and refuse to hallucinate beyond source material.</li><li>Reproducible diarisation benchmark harness with provenance-stamped runs.</li></ul>
 </details>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🛒 CommerceOS
@@ -202,8 +227,6 @@ A multi-tenant, headless commerce platform whose backend is deliberately vertica
 <p><b>✨ Highlights</b></p><ul><li>A new vertical is a configuration change, not a code fork.</li><li>Per-tenant adapter resolution keeps the core dependent only on interfaces.</li><li>Governance via a constitution, ADRs and per-phase validation reports.</li></ul>
 </details>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 🏢 No-Code Enterprise ERP
@@ -226,6 +249,8 @@ A metadata-driven enterprise operating system where organisations define their o
 <p><b>✨ Highlights</b></p><ul><li>New business modules created through configuration, without a code deployment.</li><li>Row-Level Security removes an entire class of cross-tenant data-leak risk.</li><li>Double-entry ledger keeps balanced books across all transactional activity.</li></ul>
 </details>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### 🏗️ Construction ERP
@@ -248,8 +273,6 @@ An enterprise resource planning system for construction, delivered as a native W
 <p><b>✨ Highlights</b></p><ul><li>No hosted server — no hosting cost, no single point of failure.</li><li>Rust/Tauri binary with a substantially smaller footprint than Electron.</li><li>Same REST surface serves both offline and synced multi-user modes.</li></ul>
 </details>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### 📄 Airsume
@@ -272,7 +295,6 @@ A resume-analysis and ATS platform that turns unstructured resumes and job descr
 <p><b>✨ Highlights</b></p><ul><li>Every field ships with value, confidence, method and source-span — it never fabricates.</li><li>Scores come with the human-readable reasons behind them.</li><li>Honest evaluation built in via a golden-dataset benchmark harness.</li></ul>
 </details>
 </td>
-<td width="50%"></td>
 </tr>
 </table>
 
